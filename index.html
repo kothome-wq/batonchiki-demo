@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RX Lab – вкусный батончик с белком из знакомых ингредиентов</title>
+<meta name="description" content="Батончики RX Lab: финики, орехи и яичный белок. Три вкуса в шоу-боксах на 4 и 10 штук. Оптовым партнёрам – минимальная партия 100 батончиков.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="RX Lab">
+<meta property="og:title" content="Вкусный батончик с белком из знакомых ингредиентов">
+<meta property="og:description" content="К кофе, с собой и для насыщенного дня. Три вкуса, состав открыто, опт от 100 батончиков.">
+<meta property="og:url" content="{{адрес сайта}}">
+<meta property="og:image" content="{{адрес сайта}}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/under.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23ff8aa0%27/%3E%3Crect x=%277%27 y=%2711%27 width=%2718%27 height=%2710%27 rx=%273%27 fill=%27%231f1511%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"RX Lab","description":"Вкусный батончик с белком из знакомых ингредиентов. Три вкуса, шоу-боксы на 4 и 10 штук, оптовые поставки от 100 батончиков.","url":"{{адрес сайта}}","logo":"{{адрес сайта}}/assets/og.jpg","email":"{{email}}","telephone":"{{телефон}}"}
+</script>
+<style>
+  /* ---- тема: палитра «Какао + малина» (тёмная), Dela Gothic One + Onest ---- */
+  .v-page {
+    --v-canvas: #1f1511; --v-surface: #2b1e18;
+    --v-ink: #f6ece2; --v-ink-soft: #c4b2a3;          /* 8,6:1 на холсте */
+    --v-accent: #ff8aa0; --v-accent-ink: #2b0d14;     /* 7,9:1 на холсте, 8,4:1 текст на кнопке */
+    --v-font-display: "Dela Gothic One", "Arial Black", "Segoe UI", system-ui, sans-serif;
+    --v-font-text: "Onest", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 6 3 2;
+    --v-radius: 14px;
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+    --v-display-weight: 400;
+    --v-track-tight: -0.01em;
+    --v-track-normal: 0;
+  }
+  html, body { background: #1f1511; }
+  .v-page .v-display { font-weight: 400; }
+  .v-page .v-display--xl { line-height: 1.04; }
+  .v-page .v-lede { font-weight: 400; line-height: 1.45; }
+  .v-page .v-label { font-weight: 500; }
+  .v-page .v-btn { font-size: var(--v-t-base); font-weight: 600; }
+  .v-page [id] { scroll-margin-top: 5rem; }
+  .v-page :focus-visible { outline: 2px solid var(--v-accent); outline-offset: 3px; border-radius: 4px; }
+  .slot { color: var(--v-ink-soft); border-bottom: 1px dashed var(--v-hair-strong); }
+
+  /* ---- шапка -------------------------------------------------------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
+    padding: var(--v-3) var(--v-gutter); gap: var(--v-5);
+    background: linear-gradient(to bottom, rgb(31 21 17 / .9), rgb(31 21 17 / 0));
+    transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(31 21 17 / .9); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-size: var(--v-t-lg); letter-spacing: .02em; text-decoration: none; color: var(--v-ink);
+    display: inline-flex; align-items: center; gap: .5em; min-height: 44px; white-space: nowrap; }
+  .bar__mark i { width: 1.1em; height: .62em; border-radius: .18em; background: var(--v-accent); display: inline-block; transform: rotate(-12deg); }
+  .bar__nav { display: flex; align-items: center; gap: var(--v-1); }
+  .bar__nav a { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); font-weight: 500; display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-3); border-radius: 999px; }
+  .bar__nav a:hover { background: var(--v-hair); }
+  .bar__right { display: flex; align-items: center; gap: var(--v-3); }
+  .bar__buy { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); font-weight: 500; display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.1em; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); }
+  .bar__buy:hover { box-shadow: inset 0 0 0 1px var(--v-ink); }
+  .menu { position: relative; display: none; }
+  .menu summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; min-height: 44px; padding: 0 .9em; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); font-size: .95rem; font-weight: 500; }
+  .menu summary::-webkit-details-marker { display: none; }
+  .menu[open] summary { background: var(--v-hair); }
+  .menu__list { position: absolute; right: 0; top: calc(100% + .5rem); min-width: 13rem; padding: var(--v-2); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e2), var(--v-edge); display: grid; }
+  .menu__list a { text-decoration: none; color: var(--v-ink); display: flex; align-items: center; min-height: 44px; padding: 0 var(--v-3); border-radius: 8px; font-size: 1rem; }
+  .menu__list a:hover { background: var(--v-hair); }
+  @media (max-width: 1080px) { .bar__nav { display: none; } .menu { display: block; } }
+  @media (max-width: 700px) {
+    .bar { gap: var(--v-2); }
+    .bar__buy { display: none; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; font-size: .95rem; }
+    .bar__right { gap: var(--v-2); }
+    .bar__mark { font-size: 1.1rem; }
+  }
+
+  /* ---- hero: ингредиенты → шторкой батончик в разломе ---------------------------- */
+  .hero__under img, .hero__top img { position: absolute; max-width: none; width: 110%; height: 110%; left: -5%; top: -5%; object-fit: cover; object-position: 70% 50%; }
+  .hero__top figure { position: absolute; inset: 0; margin: 0; }
+  .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: radial-gradient(120% 100% at 0% 100%, rgb(31 21 17 / .94) 0%, rgb(31 21 17 / .7) 36%, transparent 68%); }
+  .hero__floor { position: absolute; inset: auto 0 0 0; height: 22%; z-index: 2; pointer-events: none;
+    background: linear-gradient(to top, var(--v-canvas) 0%, rgb(31 21 17 / .5) 45%, transparent 100%); }
+  .hero__note { --t: clamp(6rem, 13vh, 9rem); }
+  .hero__note p { position: absolute; right: clamp(1.5rem, 5vw, 5.5rem); top: var(--t); width: clamp(190px, 15vw, 230px); padding: var(--v-4) var(--v-4) var(--v-4);
+    border-radius: var(--v-radius); background: rgb(43 30 24 / .86); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: var(--v-e2), var(--v-edge);
+    font-size: var(--v-t-sm); line-height: 1.35; color: var(--v-ink-soft); transform: rotate(3deg); }
+  .hero__note b { display: block; white-space: nowrap; font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1; color: var(--v-accent); margin-bottom: .35rem; }
+  .hero__copy { bottom: clamp(5rem, 13vh, 8.5rem); max-width: min(48rem, 88vw); }
+  .hero__label { display: block; margin-bottom: var(--v-4); color: var(--v-accent); }
+  .hero__copy .v-display { font-size: clamp(2.1rem, .9rem + 2.7vw, 3.6rem); max-width: 18ch; }
+  .hero__copy .v-lede { margin-top: var(--v-5); color: var(--v-ink); max-width: 36ch; }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-3) var(--v-4); margin-top: var(--v-6); }
+  @media (max-height: 760px) and (min-width: 861px) { .hero__copy .v-display { font-size: var(--v-t-2xl); } .hero__copy { bottom: clamp(3.5rem, 9vh, 6rem); } }
+  @media (max-width: 860px) {
+    .hero__under img { object-position: 78% 50%; }
+    .hero__top img { object-position: 50% 70%; }
+    .hero__scrim { background: linear-gradient(to bottom, rgb(31 21 17 / .95) 0%, rgb(31 21 17 / .82) 46%, transparent 70%); }
+    .hero__floor { height: 12%; }
+    .hero__note { --t: auto; }
+    .hero__note p { top: auto; bottom: 6vh; right: 5vw; width: min(46vw, 200px); padding: var(--v-3); font-size: .95rem; }
+    .hero__note b { font-size: var(--v-t-xl); }
+    .hero__copy { top: clamp(5.5rem, 11vh, 7rem); bottom: auto; max-width: none; }
+    .hero__copy .v-display { font-size: var(--v-t-2xl); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-4); }
+    .hero__label { margin-bottom: var(--v-3); }
+    .hero__cta { margin-top: var(--v-5); }
+  }
+  @media (max-width: 600px) and (max-height: 700px) { .hero__note { display: none; } }
+
+  /* ---- состав: три ингредиента строками и поворот -------------------------------- */
+  .sos__head { max-width: 58rem; margin-bottom: var(--v-7); }
+  .sos__head .v-body { margin-top: var(--v-5); }
+  .sos__rows li { display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .sos__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .sos__rows h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; text-wrap: balance; }
+  .sos__rows p { color: var(--v-ink-soft); max-width: 58ch; text-wrap: pretty; }
+  .turn { margin-top: var(--v-7); display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); align-items: start;
+    padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1), var(--v-edge); }
+  .turn .v-label { color: var(--v-accent); padding-top: .4em; }
+  .turn__text { font-size: var(--v-t-xl); line-height: 1.35; text-wrap: pretty; max-width: 40ch; }
+  @media (max-width: 860px) {
+    .sos__rows li, .turn { grid-template-columns: 1fr; gap: var(--v-2); }
+    .sos__rows h3 { font-size: var(--v-t-lg); }
+    .turn { padding: var(--v-5); }
+    .turn__text { font-size: var(--v-t-lg); }
+  }
+
+  /* ---- фирменный ход: три вкуса раскрываются веером, сверху выходит тройка -------- */
+  .sb { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr auto; column-gap: var(--v-8); height: 100%;
+    padding: clamp(4.5rem, 12vh, 7rem) var(--v-gutter) clamp(2.5rem, 8vh, 5rem); }
+  .sb__head { grid-column: 1; max-width: 38rem; } .sb__head .v-display { font-size: clamp(1.8rem, 1rem + 1.8vw, 2.7rem); }
+  .sb__head .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .sb__rep { grid-column: 1; grid-row: 2; position: relative; align-self: center; min-height: 12rem; }
+  .sb__rep > div { position: absolute; left: 0; top: 0; max-width: 32rem; }
+  .sb__step { display: inline-flex; align-items: center; gap: .55em; font-size: var(--v-t-sm); color: var(--v-ink-soft); font-weight: 500; margin-bottom: var(--v-3); }
+  .sb__step i { width: .9em; height: .55em; border-radius: .15em; background: var(--c, var(--v-accent)); }
+  .sb__rep h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.08; letter-spacing: 0; text-wrap: balance; margin-bottom: var(--v-3); }
+  .sb__rep p { color: var(--v-ink-soft); max-width: 44ch; text-wrap: pretty; }
+  .sb__rep p b { color: var(--v-ink); font-weight: 500; }
+  .sb__after { grid-column: 1; grid-row: 3; display: flex; align-items: center; gap: var(--v-5); flex-wrap: wrap; }
+  .sb__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 34ch; }
+  .fan { grid-column: 2; grid-row: 1 / -1; position: relative; align-self: center; justify-self: center; width: min(100%, 66vh); aspect-ratio: 1 / 1; }
+  .fan__card { --k: clamp(0, calc((var(--v-p, 0) - var(--s)) / .3), 1); --w: clamp(0, calc((var(--v-p, 0) - .62) / .22), 1);
+    position: absolute; left: 27%; bottom: 6%; width: 46%; aspect-ratio: 3 / 4; transform-origin: 50% 250%;
+    border-radius: var(--v-radius); overflow: hidden; background: var(--v-surface); box-shadow: 0 24px 48px rgb(6 3 2 / .55), var(--v-edge);
+    transform: translateX(calc(var(--k) * var(--tx))) rotate(calc(var(--a0) * (1 - var(--k)) + var(--a1) * var(--k))) translateY(calc(var(--k) * -6% + var(--w) * 5%));
+    opacity: calc(1 - .6 * var(--w)); will-change: transform, opacity; }
+  .fan__card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fan__card figcaption { position: absolute; left: var(--v-4); right: var(--v-4); top: var(--v-4); font-size: var(--v-t-sm); font-weight: 500; color: var(--v-ink);
+    opacity: calc(var(--k) * (1 - var(--w))); text-shadow: 0 1px 8px rgb(6 3 2 / .9); }
+  .fan__card--1 { --s: .02; --a0: 0deg; --a1: -9deg; --tx: -32%; z-index: 3; }
+  .fan__card--2 { --s: .2; --a0: 1deg; --a1: 0deg; --tx: 0%; z-index: 2; }
+  .fan__card--3 { --s: .38; --a0: -1deg; --a1: 9deg; --tx: 32%; z-index: 1; }
+  .fan__card--trio { --k: 1; z-index: 4; transform-origin: 50% 50%; transform: translateY(calc((1 - var(--w)) * 14%)) scale(calc(.92 + .08 * var(--w))); opacity: var(--w); }
+  .fan__card--trio figcaption { opacity: var(--w); }
+  .fan__legend { position: absolute; left: 0; right: 0; bottom: -1.8rem; text-align: center; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 1100px) { .sb { column-gap: var(--v-6); } .sb__rep h3 { font-size: var(--v-t-xl); } }
+  @media (max-width: 860px) {
+    .sb { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr auto; row-gap: var(--v-3); padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) clamp(1.5rem, 5vh, 3rem); }
+    .sb__head { max-width: none; }
+    .sb__head .v-label { display: none; }
+    .sb__head .v-display { font-size: var(--v-t-xl); }
+    .fan { grid-column: 1; grid-row: 2; width: min(100%, 40vh); aspect-ratio: 4 / 3; align-self: start; }
+    .fan__card { bottom: 0; }
+    .fan__card--1 { --a1: -6deg; --tx: -24%; } .fan__card--3 { --a1: 6deg; --tx: 24%; }
+    .fan__card figcaption, .fan__legend { display: none; }
+    .sb__rep { grid-row: 3; align-self: start; min-height: 9rem; }
+    .sb__rep h3 { font-size: var(--v-t-lg); margin-bottom: var(--v-2); }
+    .sb__after { grid-row: 4; }
+    .sb__hint { display: none; }
+  }
+  @media (max-width: 600px) and (max-height: 760px) { .fan { width: min(100%, 34vh); } .sb__after { display: none; } }
+
+  /* ---- каталог: шесть позиций, группы по вкусу, раскрытие состава ----------------- */
+  .cat__head { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-4) var(--v-9); align-items: end; margin-bottom: var(--v-7); }
+  .cat__head .v-body { color: var(--v-ink-soft); max-width: 46ch; }
+  .cat__group { display: grid; grid-template-columns: 9rem 1fr; gap: var(--v-6); padding: var(--v-6) 0; border-top: 1px solid var(--v-hair); }
+  .cat__group:last-of-type { border-bottom: 1px solid var(--v-hair); }
+  .cat__pic { width: 9rem; aspect-ratio: 3 / 4; border-radius: calc(var(--v-radius) - 4px); overflow: hidden; box-shadow: var(--v-e1); }
+  .cat__pic img { width: 100%; height: 100%; object-fit: cover; }
+  .cat__body h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.1; letter-spacing: 0; }
+  .cat__body > p { color: var(--v-ink-soft); margin-top: var(--v-2); max-width: 52ch; }
+  .packs { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-4); margin-top: var(--v-5); }
+  .pack { display: flex; align-items: center; justify-content: space-between; gap: var(--v-3); flex-wrap: wrap; padding: var(--v-4) var(--v-5); border-radius: calc(var(--v-radius) - 2px); background: var(--v-surface); box-shadow: var(--v-edge); }
+  .pack b { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-lg); }
+  .pack b small { display: block; font-family: var(--v-font-text); font-size: var(--v-t-sm); color: var(--v-ink-soft); margin-top: .15rem; }
+  .pack__soon { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .facts { margin-top: var(--v-4); }
+  .facts summary { cursor: pointer; display: inline-flex; align-items: center; gap: .5em; min-height: 44px; font-weight: 500; color: var(--v-accent); list-style: none; }
+  .facts summary::-webkit-details-marker { display: none; }
+  .facts summary::before { content: "+"; display: inline-grid; place-items: center; width: 1.4em; height: 1.4em; border-radius: 50%; box-shadow: inset 0 0 0 1px currentColor; font-size: .9em; transition: transform .2s var(--v-ease-out); }
+  .facts[open] summary::before { content: "–"; }
+  .facts dl { display: grid; grid-template-columns: 11rem 1fr; gap: var(--v-2) var(--v-5); padding: var(--v-3) 0 var(--v-2); font-size: var(--v-t-sm); }
+  .facts dt { color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .cat__head { grid-template-columns: 1fr; }
+    .cat__group { grid-template-columns: 1fr; gap: var(--v-4); }
+    .cat__pic { width: 100%; aspect-ratio: 16 / 9; }
+    .packs { grid-template-columns: 1fr; }
+    .facts dl { grid-template-columns: 1fr; gap: 0 0; }
+    .facts dd { margin-bottom: var(--v-3); }
+  }
+
+  /* ---- когда есть: кофе, перекус, тренировка ------------------------------------- */
+  .kg__img img { width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 75% 50%; }
+  .kg__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: radial-gradient(110% 100% at 0% 50%, rgb(31 21 17 / .95) 0%, rgb(31 21 17 / .72) 42%, transparent 74%); }
+  .kg { position: absolute; inset: 0; z-index: 3; display: grid; align-items: center; padding: clamp(4.5rem, 12vh, 7rem) var(--v-gutter) clamp(2.5rem, 8vh, 5rem); }
+  .kg__copy { max-width: 36rem; }
+  .kg__copy .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .kg__copy .v-display--lg { font-size: clamp(2rem, 1.2rem + 2.4vw, 3.4rem); margin-bottom: var(--v-6); }
+  .kg__rep { position: relative; min-height: 11rem; }
+  .kg__rep > div { position: absolute; left: 0; top: 0; max-width: 32rem; }
+  .kg__rep h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; margin-bottom: var(--v-3); text-wrap: balance; }
+  .kg__rep p { color: var(--v-ink); opacity: .9; max-width: 42ch; text-wrap: pretty; }
+  .kg__rep .kg__main { font-size: clamp(1.7rem, 1.1rem + 1.8vw, 2.6rem); }
+  .kg__dots { display: flex; gap: .5rem; margin-top: var(--v-6); }
+  .kg__dots i { width: 2.4rem; height: 4px; border-radius: 4px; background: var(--v-hair-strong); position: relative; overflow: hidden; }
+  .kg__dots i::after { content: ""; position: absolute; inset: 0; background: var(--v-accent); transform-origin: 0 50%; transform: scaleX(var(--f)); }
+  .kg__dots i:nth-child(1) { --f: clamp(0, calc(var(--v-p, 0) / .34), 1); }
+  .kg__dots i:nth-child(2) { --f: clamp(0, calc((var(--v-p, 0) - .34) / .32), 1); }
+  .kg__dots i:nth-child(3) { --f: clamp(0, calc((var(--v-p, 0) - .66) / .3), 1); }
+  @media (max-width: 860px) {
+    .kg__img img { object-position: 82% 50%; }
+    .kg__scrim { background: linear-gradient(to bottom, rgb(31 21 17 / .96) 0%, rgb(31 21 17 / .85) 52%, rgb(31 21 17 / .3) 80%, transparent 100%); }
+    .kg { align-items: start; padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) var(--v-6); }
+    .kg__copy { max-width: none; }
+    .kg__copy .v-display--lg { font-size: var(--v-t-xl); margin-bottom: var(--v-4); }
+    .kg__rep { min-height: 10rem; }
+    .kg__rep h3 { font-size: var(--v-t-lg); margin-bottom: var(--v-2); }
+    .kg__rep .kg__main { font-size: var(--v-t-xl); }
+  }
+
+  /* ---- о бренде ------------------------------------------------------------------ */
+  .brand { display: grid; grid-template-columns: 1.3fr .7fr; gap: var(--v-9); align-items: end; }
+  .brand__quote { font-family: var(--v-font-display); font-size: clamp(1.8rem, 1rem + 2.6vw, 3.4rem); line-height: 1.12; letter-spacing: 0; text-wrap: balance; }
+  .brand__who { display: block; margin-top: var(--v-7); color: var(--v-ink-soft); }
+  .brand__vals li { padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-1); }
+  .brand__vals li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .brand__vals b { font-weight: 600; }
+  .brand__vals span { color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  @media (max-width: 860px) { .brand { grid-template-columns: 1fr; gap: var(--v-7); } }
+
+  /* ---- партнёрам: фото, условия, форма ------------------------------------------ */
+  .pt { display: grid; grid-template-columns: .85fr 1.15fr; gap: var(--v-9); align-items: start; }
+  .pt__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 3 / 4; box-shadow: var(--v-e2), var(--v-edge); }
+  .pt__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .pt__min { position: absolute; left: var(--v-5); right: var(--v-5); bottom: var(--v-5); z-index: 1; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .pt__min b { display: block; white-space: nowrap; font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-2xl); line-height: 1; color: var(--v-accent); }
+  .pt__fig::after { content: ""; position: absolute; inset: auto 0 0 0; height: 50%; background: linear-gradient(to top, rgb(31 21 17 / .92), rgb(31 21 17 / .4) 55%, transparent); pointer-events: none; }
+  .pt__who { margin-top: var(--v-6); }
+  .pt__who h3 { font-size: var(--v-t-sm); font-weight: 500; color: var(--v-ink-soft); margin-bottom: var(--v-3); }
+  .pt__who ul { display: flex; flex-wrap: wrap; gap: var(--v-2); }
+  .pt__who li { padding: .45em .9em; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); font-size: var(--v-t-sm); }
+  .pt__head .v-display { margin-bottom: var(--v-4); }
+  .pt__head .v-body { color: var(--v-ink-soft); max-width: 48ch; }
+  .form { margin-top: var(--v-7); padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1), var(--v-edge); display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-5) var(--v-5); }
+  .f { display: grid; gap: .4rem; align-content: start; }
+  .f--wide { grid-column: 1 / -1; }
+  .f label, .f legend { font-size: var(--v-t-sm); font-weight: 500; }
+  .f label i, .f legend i { font-style: normal; color: var(--v-accent); }
+  .f input[type=text], .f input[type=tel], .f input[type=email], .f select, .f textarea {
+    width: 100%; min-height: 48px; padding: .7em .9em; border-radius: 10px; border: 1px solid var(--v-hair-strong); background: var(--v-canvas); color: var(--v-ink); font: inherit; font-size: 1rem; }
+  .f textarea { min-height: 6rem; resize: vertical; }
+  .f input:focus, .f select:focus, .f textarea:focus { outline: 2px solid var(--v-accent); outline-offset: 1px; border-color: transparent; }
+  .f small { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .f fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: .5rem; }
+  .f .radios { display: flex; flex-wrap: wrap; gap: var(--v-2); }
+  .f .radios label { display: inline-flex; align-items: center; gap: .5em; min-height: 44px; padding: 0 1em; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); font-weight: 400; cursor: pointer; }
+  .f .radios input { accent-color: var(--v-accent); width: 1.1em; height: 1.1em; }
+  .f .radios label:has(input:checked) { box-shadow: inset 0 0 0 2px var(--v-accent); }
+  .f .check { display: flex; gap: .7em; align-items: flex-start; font-weight: 400; cursor: pointer; }
+  .f .check input { accent-color: var(--v-accent); width: 1.3em; height: 1.3em; margin-top: .15em; flex: none; }
+  .f .check a { color: var(--v-ink); }
+  .f__err { color: #ffb4a6; font-size: var(--v-t-sm); min-height: 0; }
+  .f__err:empty { display: none; }
+  .f.is-bad input, .f.is-bad select { border-color: #ffb4a6; }
+  .form__send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--v-4); align-items: center; }
+  .form__send .v-btn[disabled] { opacity: .7; cursor: progress; }
+  .form__note { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 42ch; }
+  .form__ok { grid-column: 1 / -1; padding: var(--v-5); border-radius: 10px; background: rgb(255 138 160 / .12); box-shadow: inset 0 0 0 1px rgb(255 138 160 / .4); }
+  .form__ok b { display: block; font-size: var(--v-t-lg); margin-bottom: .3rem; }
+  .form__ok[hidden] { display: none; }
+  @media (max-width: 1000px) { .pt { grid-template-columns: 1fr; gap: var(--v-7); } .pt__fig { aspect-ratio: 4 / 3; max-width: 40rem; } }
+  @media (max-width: 640px) { .form { grid-template-columns: 1fr; padding: var(--v-5); } .pt__min b { font-size: var(--v-t-2xl); } }
+
+  /* ---- вопросы ------------------------------------------------------------------ */
+  .faq { display: grid; grid-template-columns: .7fr 1.3fr; gap: var(--v-9); align-items: start; }
+  .faq__list details { border-top: 1px solid var(--v-hair); }
+  .faq__list details:last-child { border-bottom: 1px solid var(--v-hair); }
+  .faq__list summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: var(--v-4); min-height: 56px; padding: var(--v-3) 0; font-size: var(--v-t-lg); font-weight: 500; }
+  .faq__list summary::-webkit-details-marker { display: none; }
+  .faq__list summary::after { content: "+"; flex: none; width: 1.6rem; height: 1.6rem; display: grid; place-items: center; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--v-hair-strong); color: var(--v-accent); }
+  .faq__list details[open] summary::after { content: "–"; }
+  .faq__list details p { padding: 0 0 var(--v-5); color: var(--v-ink-soft); max-width: 60ch; }
+  @media (max-width: 860px) { .faq { grid-template-columns: 1fr; gap: var(--v-5); } .faq__list summary { font-size: var(--v-t-base); } }
+
+  /* ---- финал: где купить и контакты ---------------------------------------------- */
+  .close { min-height: 80svh; display: grid; grid-template-rows: 1fr auto; padding: clamp(6rem, 14vh, 9rem) var(--v-gutter) 2.5rem;
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .5) * 100%), rgb(255 138 160 / .10), transparent 60%); }
+  .close__inner { align-self: center; display: grid; grid-template-columns: 1.2fr .8fr; gap: var(--v-9); align-items: start; padding-bottom: var(--v-9); }
+  .close__inner .v-display { margin-bottom: var(--v-5); }
+  .close__inner .v-lede { max-width: 40ch; color: var(--v-ink-soft); }
+  .close__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4); margin-top: var(--v-6); }
+  .close__soon { display: inline-flex; align-items: center; min-height: 52px; padding: 0 1.3em; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--v-hair-strong); color: var(--v-ink-soft); font-weight: 500; }
+  .close__meta { display: grid; gap: var(--v-4); color: var(--v-ink-soft); padding-top: var(--v-2); }
+  .close__meta b { color: var(--v-ink); font-weight: 500; display: block; font-size: var(--v-t-sm); margin-bottom: .2em; }
+  .close__meta a { color: var(--v-ink); }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-3) var(--v-6); padding: var(--v-6) 0 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  .foot a { color: var(--v-ink-soft); display: inline-flex; align-items: center; min-height: 44px; }
+  .foot nav { display: flex; gap: var(--v-5); flex-wrap: wrap; }
+  @media (max-width: 860px) {
+    .close { min-height: 0; padding: clamp(5rem, 12vh, 7rem) var(--v-gutter) calc(2.5rem + env(safe-area-inset-bottom)); }
+    .close__inner { grid-template-columns: 1fr; gap: var(--v-7); padding-bottom: var(--v-8); }
+  }
+  /* телефон: текст не мельче 15 px; блок в конце, чтобы не перебивался правилами компонентов */
+  @media (max-width: 860px) {
+    .sos__rows p, .sb__rep p, .sb__step, .cat__body > p, .pack b small, .pack__soon, .facts dl, .kg__rep p, .brand__vals span, .pt__who h3, .pt__who li, .pt__min,
+    .f label, .f legend, .f small, .f__err, .form__note, .faq__list details p, .close__meta, .close__meta b, .foot, .v-label { font-size: .95rem; }
+  }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+  <div class="v-grain" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>RX Lab</a>
+    <nav class="bar__nav" aria-label="Разделы">
+      <a href="#sostav">Состав</a>
+      <a href="#vkusy">Вкусы</a>
+      <a href="#brend">О бренде</a>
+      <a href="#partneram">Партнёрам</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <div class="bar__right">
+      <a class="bar__buy" href="#gde-kupit">Купить</a>
+      <a class="v-btn" href="#partneram">Купить оптом</a>
+      <details class="menu">
+        <summary aria-label="Меню">Меню</summary>
+        <nav class="menu__list" aria-label="Разделы">
+          <a href="#sostav">Состав</a>
+          <a href="#vkusy">Вкусы</a>
+          <a href="#katalog">Каталог</a>
+          <a href="#brend">О бренде</a>
+          <a href="#partneram">Партнёрам</a>
+          <a href="#gde-kupit">Где купить</a>
+          <a href="#kontakty">Контакты</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1 · УЗНАВАНИЕ: знакомые ингредиенты → шторкой батончик в разломе -->
+    <section id="top" data-v-act="pin" data-v-span="2.2" data-v-drift="#1f1511" aria-label="Батончики RX Lab">
+      <div data-v-stage>
+        <div class="v-layer hero__under" data-v-parallax="-0.3">
+          <img src="assets/under.webp" alt="" width="1920" height="1080" fetchpriority="high">
+        </div>
+        <div class="v-layer hero__top" data-v-parallax="-0.6">
+          <figure data-v-reveal="up" data-v-reveal-at="0.06 0.5">
+            <picture>
+              <source media="(max-width: 860px)" srcset="assets/hero-m.webp">
+              <img src="assets/hero.webp" alt="Батончики в шоколаде, один разломлен: внутри финики и рубленые орехи" width="1920" height="1080">
+            </picture>
+          </figure>
+        </div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="v-layer hero__note" data-v-parallax="-0.2">
+          <p><b>100 шт.</b>минимальная оптовая партия – видна сразу, а не после звонка</p>
+        </div>
+        <div class="hero__floor" aria-hidden="true"></div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.86 0 0.12">
+          <span class="v-label hero__label">Финики, орехи, яичный белок</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Вкусный батончик с белком из знакомых ингредиентов</h1>
+          <p class="v-lede">К кофе, с собой и для насыщенного дня.</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="#partneram">Купить оптом</a>
+            <a class="v-btn v-btn--ghost" href="#gde-kupit">Купить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · СОСТАВ: три ингредиента и их роль -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#241813" id="sostav" aria-label="Состав">
+      <div class="v-wrap">
+        <div class="sos__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Что внутри – видно с первого взгляда</h2>
+          <p class="v-body v-soft">Основа у всей линейки одна. Отличаются вкусы – о них ниже.</p>
+        </div>
+        <ul class="sos__rows" data-v-in data-v-stagger="90">
+          <li><h3>Финики</h3><p>Основа батончика: держат форму и дают плотную, тянущуюся текстуру. <span class="slot">{{роль фиников – уточнить у заказчика}}</span></p></li>
+          <li><h3>Орехи</h3><p>Хруст на разломе и сытость. Какие именно орехи в каждом вкусе – в карточке состава. <span class="slot">{{виды орехов}}</span></p></li>
+          <li><h3>Яичный белок</h3><p>Отсюда белок в составе. Сколько граммов в одном батончике – в КБЖУ каждого вкуса.</p></li>
+        </ul>
+        <div class="turn" data-v-in data-v-in-self>
+          <span class="v-label">Без мелкого шрифта</span>
+          <p class="turn__text">Состав, аллергены, КБЖУ на батончик и на 100 г, срок годности и хранение – открыты в каталоге у каждого вкуса.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · ВКУСЫ: веер из трёх вкусов, сверху выходит тройка (фирменный ход) -->
+    <section data-v-act="pin" data-v-span="2.4" data-v-drift="#1f1511" id="vkusy" aria-label="Три вкуса">
+      <div data-v-stage>
+        <div class="sb">
+          <div class="sb__head" data-v-cue="0 1 0 0" data-v-rise="0">
+            <span class="v-label">Три вкуса</span>
+            <h2 class="v-display v-display--md">Выбирайте по настроению, а не по проценту белка</h2>
+          </div>
+
+          <div class="sb__rep">
+            <div data-v-cue="0 0.26 0 0.05">
+              <span class="sb__step" style="--c:#c9a37c"><i aria-hidden="true"></i>Вкус 1</span>
+              <h3>Шоколад – морская соль</h3>
+              <p>Сладкое и солёное в одном укусе. <span class="slot">{{описание вкуса}}</span></p>
+            </div>
+            <div data-v-cue="0.27 0.51 0.05 0.05">
+              <span class="sb__step" style="--c:#8a5a3c"><i aria-hidden="true"></i>Вкус 2</span>
+              <h3>Шоколад – кофе</h3>
+              <p>Для тех, кому одной чашки мало. <span class="slot">{{описание вкуса}}</span></p>
+            </div>
+            <div data-v-cue="0.52 0.76 0.05 0.05">
+              <span class="sb__step" style="--c:#ff8aa0"><i aria-hidden="true"></i>Вкус 3</span>
+              <h3>Ягодный микс</h3>
+              <p>Ягодная кислинка поверх финиковой сладости. <span class="slot">{{описание вкуса}}</span></p>
+            </div>
+            <div data-v-cue="0.77 1 0.05 0">
+              <span class="sb__step"><i aria-hidden="true"></i>Как продаём</span>
+              <h3>Шоу-боксы на 4 и 10 штук</h3>
+              <p>Каждый вкус – в двух размерах, в коробке один вкус. <b>Всё подробно – в каталоге ниже.</b></p>
+            </div>
+          </div>
+
+          <div class="fan" aria-hidden="true">
+            <figure class="fan__card fan__card--3"><img src="assets/berry.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Ягодный микс</figcaption></figure>
+            <figure class="fan__card fan__card--2"><img src="assets/coffee.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Шоколад – кофе</figcaption></figure>
+            <figure class="fan__card fan__card--1"><img src="assets/salt.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Шоколад – морская соль</figcaption></figure>
+            <figure class="fan__card fan__card--trio"><img src="assets/trio.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Три вкуса</figcaption></figure>
+            <p class="fan__legend">Фото в демо – иллюстрация, на сайте будут ваши шоу-боксы</p>
+          </div>
+
+          <div class="sb__after" data-v-cue="0.78 1 0.06 0">
+            <a class="v-btn" href="#katalog">Смотреть каталог</a>
+            <span class="sb__hint">Состав и КБЖУ – у каждого вкуса отдельно</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · КАТАЛОГ: шесть позиций -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#241813" id="katalog" aria-label="Каталог">
+      <div class="v-wrap">
+        <div class="cat__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Шесть позиций</h2>
+          <p class="v-body">Три вкуса, у каждого – шоу-бокс на 4 и на 10 батончиков. Розница – на маркетплейсе, опт – по заявке.</p>
+        </div>
+
+        <article class="cat__group" data-v-in data-v-in-self>
+          <div class="cat__pic"><img src="assets/salt.webp" alt="Батончик шоколад – морская соль в разломе" width="900" height="1200" loading="lazy" decoding="async"></div>
+          <div class="cat__body">
+            <h3>Шоколад – морская соль</h3>
+            <p>Масса батончика – <span class="slot">{{масса}}</span> г. <span class="slot">{{описание вкуса}}</span></p>
+            <div class="packs">
+              <div class="pack"><b>4 батончика<small>шоу-бокс</small></b><span class="pack__soon">Скоро на Wildberries</span></div>
+              <div class="pack"><b>10 батончиков<small>шоу-бокс</small></b><span class="pack__soon">Скоро на Wildberries</span></div>
+            </div>
+            <details class="facts">
+              <summary>Состав, КБЖУ и хранение</summary>
+              <dl>
+                <dt>Состав</dt><dd><span class="slot">{{состав}}</span></dd>
+                <dt>Аллергены</dt><dd><span class="slot">{{аллергены}}</span></dd>
+                <dt>КБЖУ на батончик</dt><dd><span class="slot">{{кбжу на батончик}}</span></dd>
+                <dt>КБЖУ на 100 г</dt><dd><span class="slot">{{кбжу на 100 г}}</span></dd>
+                <dt>Срок и хранение</dt><dd><span class="slot">{{срок годности}}</span>, <span class="slot">{{условия хранения}}</span></dd>
+              </dl>
+            </details>
+          </div>
+        </article>
+
+        <article class="cat__group" data-v-in data-v-in-self>
+          <div class="cat__pic"><img src="assets/coffee.webp" alt="Батончик шоколад – кофе в разломе" width="900" height="1200" loading="lazy" decoding="async"></div>
+          <div class="cat__body">
+            <h3>Шоколад – кофе</h3>
+            <p>Масса батончика – <span class="slot">{{масса}}</span> г. <span class="slot">{{описание вкуса}}</span></p>
+            <div class="packs">
+              <div class="pack"><b>4 батончика<small>шоу-бокс</small></b><span class="pack__soon">Скоро на Wildberries</span></div>
+              <div class="pack"><b>10 батончиков<small>шоу-бокс</small></b><span class="pack__soon">Скоро на Wildberries</span></div>
+            </div>
+            <details class="facts">
+              <summary>Состав, КБЖУ и хранение</summary>
+              <dl>
+                <dt>Состав</dt><dd><span class="slot">{{состав}}</span></dd>
+                <dt>Аллергены</dt><dd><span class="slot">{{аллергены}}</span></dd>
+                <dt>КБЖУ на батончик</dt><dd><span class="slot">{{кбжу на батончик}}</span></dd>
+                <dt>КБЖУ на 100 г</dt><dd><span class="slot">{{кбжу на 100 г}}</span></dd>
+                <dt>Срок и хранение</dt><dd><span class="slot">{{срок годности}}</span>, <span class="slot">{{условия хранения}}</span></dd>
+              </dl>
+            </details>
+          </div>
+        </article>
+
+        <article class="cat__group" data-v-in data-v-in-self>
+          <div class="cat__pic"><img src="assets/berry.webp" alt="Батончик ягодный микс в разломе" width="900" height="1200" loading="lazy" decoding="async"></div>
+          <div class="cat__body">
+            <h3>Ягодный микс</h3>
+            <p>Масса батончика – <span class="slot">{{масса}}</span> г. <span class="slot">{{описание вкуса}}</span></p>
+            <div class="packs">
+              <div class="pack"><b>4 батончика<small>шоу-бокс</small></b><span class="pack__soon">Скоро на Wildberries</span></div>
+              <div class="pack"><b>10 батончиков<small>шоу-бокс</small></b><span class="pack__soon">Скоро на Wildberries</span></div>
+            </div>
+            <details class="facts">
+              <summary>Состав, КБЖУ и хранение</summary>
+              <dl>
+                <dt>Состав</dt><dd><span class="slot">{{состав}}</span></dd>
+                <dt>Аллергены</dt><dd><span class="slot">{{аллергены}}</span></dd>
+                <dt>КБЖУ на батончик</dt><dd><span class="slot">{{кбжу на батончик}}</span></dd>
+                <dt>КБЖУ на 100 г</dt><dd><span class="slot">{{кбжу на 100 г}}</span></dd>
+                <dt>Срок и хранение</dt><dd><span class="slot">{{срок годности}}</span>, <span class="slot">{{условия хранения}}</span></dd>
+              </dl>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5 · КОГДА: три ситуации, первая – главная -->
+    <section data-v-act="pin" data-v-span="2" data-v-drift="#1f1511" id="kogda" aria-label="Когда есть">
+      <div data-v-stage>
+        <div class="v-layer kg__img" data-v-parallax="-0.4">
+          <img src="assets/cup.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="kg__scrim" aria-hidden="true"></div>
+        <div class="kg">
+          <div class="kg__copy">
+            <div data-v-cue="0 1 0 0" data-v-rise="0">
+              <span class="v-label">Когда</span>
+              <h2 class="v-display v-display--lg">Повод не нужен. Но три случаются чаще других</h2>
+            </div>
+            <div class="kg__rep">
+              <div data-v-cue="0 0.34 0 0.06">
+                <h3 class="kg__main">Вместо десерта к кофе или чаю</h3>
+                <p>Сладкое к чашке: батончик там, где обычно стоит пирожное.</p>
+              </div>
+              <div data-v-cue="0.36 0.66 0.06 0.06">
+                <h3>Перекус на насыщенный день</h3>
+                <p>Когда до обеда далеко, а встреча за встречей. Удобный формат – взять с собой.</p>
+              </div>
+              <div data-v-cue="0.68 1 0.06 0">
+                <h3>До или после тренировки – как удобно вам</h3>
+                <p>Батончик с белком, который можно взять с собой в зал. Без обещаний рекордов – просто вкусный перекус.</p>
+              </div>
+            </div>
+            <div class="kg__dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · О БРЕНДЕ: миссия и ценности (тексты заказчика) -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#241813" id="brend" aria-label="О бренде">
+      <div class="v-wrap brand">
+        <div data-v-in data-v-in-self>
+          <p class="brand__quote" data-v-kinetic="words">«Давать людям энергию, создавая вкусный продукт из знакомых ингредиентов»</p>
+          <p class="brand__who">Миссия RX Lab</p>
+        </div>
+        <ul class="brand__vals" data-v-in data-v-stagger="70">
+          <li><b>Простота и понятность</b></li>
+          <li><b>Прямота и открытость</b></li>
+          <li><b>Требовательность к качеству</b></li>
+          <li><b>Готовность идти своим путём</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7 · ПАРТНЁРАМ: условия и форма заявки -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#1f1511" id="partneram" aria-label="Партнёрам">
+      <div class="v-wrap pt">
+        <div>
+          <figure class="pt__fig" data-v-reveal="up" data-v-reveal-at="0.1 0.42" data-v-tilt="4">
+            <img src="assets/shop.webp" alt="Поднос с батончиками на стойке кофейни" width="1200" height="1600" loading="lazy" decoding="async">
+            <figcaption class="pt__min"><b>от 100 шт.</b>минимальный оптовый заказ – это размер партии, а не план продаж в месяц</figcaption>
+          </figure>
+          <div class="pt__who" data-v-in data-v-stagger="50">
+            <h3>Кому подходит</h3>
+            <ul>
+              <li>дистрибьюторы</li><li>кофейни</li><li>фитнес-клубы</li><li>магазины и торговые сети</li><li>вендинговые операторы</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="pt__head" data-v-in data-v-stagger="70">
+            <h2 class="v-display v-display--lg">Хотите продавать RX Lab?</h2>
+            <p class="v-body">Обсудим поставки для вашего бизнеса. Минимальный оптовый заказ – 100 батончиков. Оставьте заявку, чтобы получить условия сотрудничества.</p>
+          </div>
+
+          <form class="form" id="opt-form" novalidate data-v-in data-v-in-self>
+            <div class="f" data-f="name"><label for="f-name">Имя <i>*</i></label><input id="f-name" name="name" type="text" autocomplete="name" required><span class="f__err" aria-live="polite"></span></div>
+            <div class="f" data-f="company"><label for="f-company">Компания или проект <i>*</i></label><input id="f-company" name="company" type="text" autocomplete="organization" required><span class="f__err" aria-live="polite"></span></div>
+            <div class="f" data-f="city"><label for="f-city">Город или регион поставки <i>*</i></label><input id="f-city" name="city" type="text" required><span class="f__err" aria-live="polite"></span></div>
+            <div class="f" data-f="type"><label for="f-type">Тип бизнеса <i>*</i></label>
+              <select id="f-type" name="type" required>
+                <option value="">Выберите</option><option>Дистрибьютор</option><option>Кофейня</option><option>Фитнес-клуб</option><option>Магазин или торговая сеть</option><option>Вендинг</option><option>Другое</option>
+              </select><span class="f__err" aria-live="polite"></span></div>
+            <div class="f f--wide" data-f="volume">
+              <fieldset>
+                <legend>Планируемые продажи в месяц <i>*</i></legend>
+                <div class="radios">
+                  <label><input type="radio" name="volume" value="менее 100 шт.">менее 100 шт.</label>
+                  <label><input type="radio" name="volume" value="100–499 шт.">100–499 шт.</label>
+                  <label><input type="radio" name="volume" value="500–999 шт.">500–999 шт.</label>
+                  <label><input type="radio" name="volume" value="1 000 шт. и более">1 000 шт. и более</label>
+                </div>
+                <small>Оценка ежемесячных продаж. Минимальный заказ – 100 шт.</small>
+              </fieldset>
+              <span class="f__err" aria-live="polite"></span>
+            </div>
+            <div class="f" data-f="phone"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7"><span class="f__err" aria-live="polite"></span></div>
+            <div class="f" data-f="msg"><label for="f-msg">Telegram или другой мессенджер</label><input id="f-msg" name="messenger" type="text"><small>Укажите @username либо название мессенджера и номер телефона</small><span class="f__err" aria-live="polite"></span></div>
+            <div class="f f--wide" data-f="contact"><small>Нужен хотя бы один способ связи: телефон или мессенджер.</small><span class="f__err" aria-live="polite"></span></div>
+            <div class="f" data-f="email"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"><span class="f__err" aria-live="polite"></span></div>
+            <div class="f" data-f="comment"><label for="f-comment">Комментарий</label><textarea id="f-comment" name="comment" rows="3"></textarea></div>
+            <div class="f f--wide" data-f="agree"><label class="check"><input type="checkbox" name="agree"><span>Согласен на обработку персональных данных по <a href="#">политике</a> и <a href="#">согласию</a></span></label><span class="f__err" aria-live="polite"></span></div>
+            <div class="form__send">
+              <button class="v-btn" type="submit">Получить оптовые условия</button>
+              <span class="form__note">Оптовые цены не публикуем – пришлём условия после заявки.</span>
+            </div>
+            <div class="form__ok" role="status" hidden><b>Спасибо! Заявка получена.</b>Свяжемся с вами, чтобы обсудить сотрудничество. <span class="slot">В демо заявка никуда не отправляется.</span></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · ВОПРОСЫ -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#241813" id="voprosy" aria-label="Вопросы и ответы">
+      <div class="v-wrap faq">
+        <h2 class="v-display v-display--md" data-v-in data-v-in-self>Вопросы и ответы</h2>
+        <div class="faq__list" data-v-in data-v-stagger="60">
+          <details><summary>Что входит в состав?</summary><p>Основа – финики, орехи и яичный белок, плюс ингредиенты конкретного вкуса. Полный состав – в каталоге, у каждого вкуса отдельно.</p></details>
+          <details><summary>Есть ли аллергены?</summary><p><span class="slot">{{аллергены по линейке}}</span> Точный список – в карточке каждого вкуса.</p></details>
+          <details><summary>Как хранить?</summary><p><span class="slot">{{условия хранения}}</span></p></details>
+          <details><summary>Какой срок годности?</summary><p><span class="slot">{{срок годности}}</span></p></details>
+          <details><summary>Где купить в розницу?</summary><p>На маркетплейсе. Пока это Wildberries – ссылки появятся, как только позиции станут доступны.</p></details>
+          <details><summary>Какая минимальная оптовая партия?</summary><p>100 батончиков. Это размер партии, а не обязательный объём продаж в месяц. Условия пришлём после заявки.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 · ДЕЙСТВИЕ: где купить и контакты -->
+    <section data-v-act="flow" data-v-drift="#1f1511" id="kontakty" aria-label="Где купить и контакты">
+      <div class="close" data-v-spotlight>
+        <div class="close__inner">
+          <div data-v-in data-v-stagger="80" id="gde-kupit">
+            <h2 class="v-display v-display--lg">Где купить</h2>
+            <p class="v-lede">В розницу – на Wildberries, ссылки появятся здесь. Оптом – по заявке, условия пришлём лично.</p>
+            <div class="close__cta">
+              <a class="v-btn" href="#partneram" data-v-magnet="0.22" data-v-rise="0">Купить оптом</a>
+              <span class="close__soon">Wildberries – скоро</span>
+            </div>
+          </div>
+          <div class="close__meta" data-v-in data-v-stagger="60">
+            <span><b>Почта</b><span class="slot">{{email}}</span></span>
+            <span><b>Телефон</b><span class="slot">{{телефон}}</span></span>
+            <span><b>Соцсети</b><span class="slot">{{соцсети}}</span></span>
+          </div>
+        </div>
+        <footer class="foot">
+          <span>RX Lab · <span class="slot">{{юрлицо}}</span>, ИНН <span class="slot">{{ИНН}}</span></span>
+          <nav aria-label="Документы"><a href="#">Политика обработки персональных данных</a><a href="#">Согласие на обработку данных</a></nav>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  // На телефоне пины короче: data-v-span правим до монтирования.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.8');
+    document.getElementById('vkusy').setAttribute('data-v-span', '2.2');
+    document.getElementById('kogda').setAttribute('data-v-span', '1.8');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки; меню закрывается после выбора пункта.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null, menu = document.querySelector('.menu');
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+    menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') menu.removeAttribute('open'); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.open) { menu.removeAttribute('open'); menu.querySelector('summary').focus(); } });
+  })();
+
+  // Форма оптовой заявки: правила из ТЗ (обязательные поля, телефон или мессенджер, email, согласие, защита от двойного клика).
+  (function () {
+    var form = document.getElementById('opt-form'), ok = form.querySelector('.form__ok'), btn = form.querySelector('button[type=submit]');
+    function box(n) { return form.querySelector('[data-f="' + n + '"]'); }
+    function err(n, text) { var b = box(n); b.classList.toggle('is-bad', !!text); b.querySelector('.f__err').textContent = text || ''; return !text; }
+    function val(n) { var el = form.elements[n]; return el ? String(el.value || '').trim() : ''; }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (btn.disabled) return;
+      var good = true;
+      good = err('name', val('name') ? '' : 'Укажите имя') && good;
+      good = err('company', val('company') ? '' : 'Укажите компанию или проект') && good;
+      good = err('city', val('city') ? '' : 'Укажите город или регион поставки') && good;
+      good = err('type', val('type') ? '' : 'Выберите тип бизнеса') && good;
+      good = err('volume', form.querySelector('input[name=volume]:checked') ? '' : 'Выберите один из вариантов') && good;
+      var phone = val('phone'), msg = val('messenger');
+      good = err('phone', phone && phone.replace(/\D/g, '').length < 10 ? 'Проверьте номер: нужен код страны и 10 цифр' : '') && good;
+      good = err('contact', phone || msg ? '' : 'Укажите телефон или мессенджер – хотя бы что-то одно') && good;
+      var mail = val('email');
+      good = err('email', mail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail) ? 'Проверьте адрес почты' : '') && good;
+      good = err('agree', form.elements.agree.checked ? '' : 'Нужно согласие на обработку данных') && good;
+      if (!good) { var bad = form.querySelector('.is-bad input, .is-bad select'); if (bad) bad.focus(); return; }
+      btn.disabled = true; btn.textContent = 'Отправляем…';
+      setTimeout(function () { btn.textContent = 'Получить оптовые условия'; btn.disabled = false; ok.hidden = false; ok.focus && ok.setAttribute('tabindex', '-1'); ok.focus(); }, 900);
+    });
+  })();
+</script>
+</body>
+</html>
